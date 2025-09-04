@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@prisma/client": "^6.15.0",
+    "@prisma/client": "^6.11.1",
     "@types/express": "^5.0.3",
     "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^24.3.0",
+    "@types/node": "^24.0.13",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
@@ -16,12 +16,15 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.1.10",
-    "prisma": "^6.15.0",
+    "prisma": "^6.11.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.8.3"
   },
   "scripts": {
-    "start": "nodemon ts-node ./app/index.ts",
-    "build": "prisma generate && prisma migrate deploy && tsc"
+    "dev": "nodemon ts-node ./src/app.ts"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.19",
+    "cors": "^2.8.5"
   }
 }
